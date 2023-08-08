@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="offscreen">My List</h1>
+      <section class="newItemEntry">
+        <h2 class="offscreen">New Item Entry</h2>
+        <form class="newItemEntry__form" id="itemEntryForm">
+          <label for=""></label>
+          <input 
+            type="text" name="" id="newItem"
+            class="button newItemEntry__input"
+            placeholder="Add item" />
+          <button 
+            id="addItem"
+            class="button listTitle__button"
+            aria-label="Add new item to list"> 
+            +
+          </button>
+        </form>
+      </section>
+
+      <section class="listContainer">
+        <header>
+          <h2 id="listName">List</h2>
+          <button 
+            id="clearItemsButton" 
+            class="button listTitle__button" aria-label="Remove all items from the list">
+            Clear
+          </button>
+        </header>
+        <hr />
+        <ul id="listitems">
+          <!-- <li id="item">
+            <input type="checkbox" tabindex="0">
+            <label for="1">eat</label>
+          </li>
+          <li id="item">
+            <input type="checkbox" tabindex="0">
+            <label for="2">sleep</label>
+          </li>
+          <li id="item">
+            <input type="checkbox" tabindex="0">
+            <label for="3">code</label>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
